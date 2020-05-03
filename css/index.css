@@ -1,0 +1,146 @@
+/*--------------VARIABLES----------------------*/
+:root{
+    --lightimg: url('../img/lightwall.jpg');
+    --darkimg: url('../img/darkwall.png');
+    --dark: rgb(41, 41, 41);
+    --light:rgb(202, 202, 202);
+}
+.light{
+    --divbg: var(--light);
+    --fontcolor: var(--dark);
+    --bordercolor:var(--dark);
+    --bgimg: var(--lightimg);
+    
+}
+.dark{
+    --divbg: var(--dark);
+    --fontcolor: var(--light);
+    --bordercolor:var(--light);
+    --bgimg: var(--darkimg);
+}
+/*---------------------------------------------*/
+body{
+    padding: 0;
+    margin: 0;
+    background-image:var(--bgimg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+    filter: brightness(115%);
+    transition: 500ms linear;
+}
+/*---------------------------------------------*/
+#ClockHolder{
+    float: right;
+    width: 250px;
+    height: 100px;
+    margin: 100px;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border: solid 8px var(--bordercolor);
+    background-color: var(--divbg);
+    transition: 500ms linear;
+}
+
+#Clock{
+  font-size: 70px;
+  color: var(--fontcolor);
+  text-align: center;
+ 
+}
+
+/*---------------------------------------------*/
+#SearchBarHolder{
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    border: solid 8px var(--bordercolor); 
+    background-color:var(--divbg);
+    float: right;
+    transition: 500ms linear;
+}
+
+#SearchBar input{
+    border: none;
+    background: transparent;
+    outline: none;
+    line-height: 20px;
+    width: 230px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color:var(--fontcolor);
+}
+#SearchBar{
+    align-items: center;
+    margin: 8px;
+}
+/*---------------------------------------------*/
+#ThemeSwitch{
+    float: right;
+    width: 100px;
+    height: 75px;
+    margin-right: 100px;
+    border: solid 8px var(--bordercolor);
+    background-color: var(--divbg);
+    clear: both;
+    align-content: center;
+    transition: 500ms linear 1s;
+}
+#DarkSwitch{
+    margin: 8px;
+    text-align: center;
+    color: var(--light);
+    background-color: var(--dark);
+}
+#LightSwitch{
+    margin: 8px;
+    text-align: center;
+    color: var(--dark);
+    background-color: var(--light);
+
+}
+#DarkSwitch > a{
+    color: var(--light);
+}
+#LightSwitch > a{
+    color: var(--dark);
+}
+/*---------------------------------------------*/
+.ContentHolder{
+    position: absolute;
+    padding-bottom: 23px;
+    width: 250px;
+    height: 500px;
+    margin: 100px;
+    margin-top: 250px;
+    border: solid 8px var(--bordercolor); 
+    background-color: var(--divbg);
+    transition: 500ms linear;
+    
+}
+.ContentHolder > ul > li{
+    font-size: 15px;
+    text-align: center;
+    margin: 7px;
+}
+.ContentHolder p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--fontcolor);
+}
+.ContentHolder a{
+    color: var(--fontcolor);
+}
+/*---------------------------------------------*/
+ul{
+    padding: 0;
+    margin: 15px;
+    list-style-type: none;
+    text-align: center;
+    letter-spacing: 1px;
+}
+a:link, a:visited, a:hover{
+    text-decoration: none;
+}

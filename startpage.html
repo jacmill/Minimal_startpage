@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start</title>
+        <meta name="viewport" content="width = device - width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible", content="IE, chrome=1" charset="UTF-8">
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <script defer src="./js/Clock.js"></script>
+        <script defer src="./js/ThemeSwitch.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body class ="light" onload="Time();">
+
+        <div id="ClockHolder">
+            <div id="Clock"></div>
+        </div>
+        <div id="SearchBarHolder">
+            <div id="SearchBar">
+                <form method="get" action="https://duckduckgo.com/">
+                    <input type="text" name="q" placeholder="Search">
+                </form>
+            </div>
+        </div>
+        <div class="ContentHolder">
+            <p>Social</p>
+            <ul>
+               <li><a href="https://www.facebook.com">Facebook</a></li>
+               <li><a href="https://www.instagram.com">Instagram</a></li>
+               <li><a href="https://www.twitter.com">Twitter</a></li>
+               <li><a href="https://www.reddit.com">Reddit</a></li> 
+            </ul>
+            <p>Media</p>
+            <ul>
+                <li><a href="https://www.youtube.com">Youtube</a></li>
+                <li><a href="https://www.twitch.com">Twitch</a></li>
+                <li><a href="https://www.photos.google.com">Photos</a></li>
+                <li><a href="https://www.netflix.com">Netflix</a></li>
+                <li><a href="https://www.soundcloud.com">Soundcloud</a></li>   
+             </ul>
+            <p>Useful</p>
+            <ul>
+                <li><a href="https://portal.librus.pl/rodzina">Librus</a></li>
+                <li><a href="https://github.com">Github</a></li>
+                <li><a href="https://gmail.com">Gmail</a></li>
+             </ul>
+        </div>
+        <div id="ThemeSwitch">
+           <div id="LightSwitch"><a id="light" href="#" >Light</a></div>
+           <div id="DarkSwitch"><a id="dark" href="#">Dark</a></div>
+        </div>
+    </body>
+</html>
