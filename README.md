@@ -1,6 +1,6 @@
 # Minimal_startpage
 This is my minimal startpage.
 
-#Light Mode 
+# Light Mode 
 
-#Dark Mode 
+# Dark Mode 
